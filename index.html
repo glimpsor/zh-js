@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>zh-js by glimpsor</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>zh-js</h1>
+        <p>zh-Hans &lt;-&gt; zh-Hant convertor in Javascript</p>
+
+        <p class="view"><a href="https://github.com/glimpsor/zh-js">View the Project on GitHub <small>glimpsor/zh-js</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/glimpsor/zh-js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/glimpsor/zh-js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/glimpsor/zh-js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="zh-hans---zh-hant-convertor-in-javascript" class="anchor" href="#zh-hans---zh-hant-convertor-in-javascript"><span class="octicon octicon-link"></span></a>zh-Hans &lt;-&gt; zh-Hant convertor in Javascript</h1>
+
+<p><strong>zh-js</strong> construct 1D <strong>Uint16Array</strong> for single word convertion and Nested Array with Object for phrase correction. It sacrifices space for instant performance. The conversion table is taken from New Tong Wen Tang with GPLv2.</p>
+
+<h3>
+<a name="to-use" class="anchor" href="#to-use"><span class="octicon octicon-link"></span></a>To use:</h3>
+
+<p>Browser:</p>
+
+<pre><code>&lt;script type="text/javascript" src="zh.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+zh.hans($('body')); // jQuery Object
+zh.hant(document.documentElement); // Regular DOM Element
+&lt;/script&gt;
+</code></pre>
+
+<p>Require.js/Node.js:</p>
+
+<pre><code>var zh = require('zh-js');
+zh.hans('簡體');  // return: 简体
+zh.hant('繁体');  // return: 繁體
+</code></pre>
+
+<h4>
+<a name="the-conversion-table-follows-gnu-general-public-license-gpl-version-2-license-from-new-tong-wen-tang-httptongwenopenfoundryorg" class="anchor" href="#the-conversion-table-follows-gnu-general-public-license-gpl-version-2-license-from-new-tong-wen-tang-httptongwenopenfoundryorg"><span class="octicon octicon-link"></span></a>The conversion table follows GNU General Public License (GPL) version 2 license from New Tong Wen Tang <a href="http://tongwen.openfoundry.org/">http://tongwen.openfoundry.org/</a>
+</h4>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/glimpsor">glimpsor</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
