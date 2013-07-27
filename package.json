@@ -1,0 +1,11 @@
+{
+  "name": "zh-js",
+  "version": "0.1.0",
+  "description": "Speed-optimized zh-Hans <-> zh-Hant convertor in Javascript.",
+  "main": "zh.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glimpsor/zh-js"
+  },
+  "license": "GPL Version 2"
+}
