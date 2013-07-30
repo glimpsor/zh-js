@@ -2,7 +2,7 @@ var zh = require('zh-js');
 var originalString = '採用Uint16Array陣列取代相聯陣列';
 var simplifiedString = '采用Uint16Array阵列取代相联阵列';
 var traditionalString = '採用Uint16Array陣列取代相聯陣列';
-var longSimplifiedString, longTraditionalString;
+var longSimplifiedString = '', longTraditionalString = '';
 for (var i = 0; i < 2000; i++) {
 	longSimplifiedString += simplifiedString;
 	longTraditionalString += traditionalString;
